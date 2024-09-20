@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #E0F7FA;
+  margin: 0;
+}
+
+h1 {
+  color: #42445A;
+  text-align: center;
+}
+
+div, main {
+	outline: 1px black solid;
+}
+
+
+#container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  min-width: 500px;
+  min-height: 550px;
+  background-color: #42445A;
+  font-size: 24px;
+}
+
+#display {
+  margin: 15px;
+  min-height: 100px;
+  background: whitesmoke;
+  color: black;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+#buttons {
+  display: flex;
+  flex: 1;
+}
+
+#thick-column {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+
+#thin-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #009688;
+}
+
+#top-row {
+  margin: 0 5px 10px 0;
+  display: flex;
+  flex: 1;
+  background-color: #BDC3C7;
+}
+
+#numerals {
+  margin: 0px 5px 0 0;
+  flex: 4;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rb, .tb, .lb {
+  flex: 1 0 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+.rb:hover, .tb:hover, .lb:hover {
+  background-color: #E5E7EB;
+  color: #3882f6;
+}
+
+.tb {
+  color: #42445A;
+}
+
+.lb {
+	color: white;
+	min-height: 100px
+}
